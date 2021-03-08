@@ -10,6 +10,10 @@ class Example {
     {
         $this->collaborator = $collaborator;
         $this->foo = $foo;
-        
+
+    }
+
+    public function handle() {
+        die('it workds '.$this->collaborator->collaborate());
     }
 }

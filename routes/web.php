@@ -18,20 +18,18 @@
 
 Route::get('/posts/{post}', 'PostsController@show');
 
-Route::get('/', function () { 
-    
+Route::get('/', function () {
 
-    // ddd(resolve('App\Example'), resolve('App\Example'));
+    //ddd(resolve('App\Example'), resolve('App\Example'));
 
-    return view('welcome'); 
+    return view('welcome');
 
 });
 
 Route::get('/home', 'PagesController@home');
 
-Route::get('/contact', function() {
-    return view('contact');
-});
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact', 'ContactController@store');
 
 Route::get('/about', function() {
     $articles = App\Article::latest()->get();

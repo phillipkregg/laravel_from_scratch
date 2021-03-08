@@ -30,10 +30,10 @@ Released   : 20140225
         <div id="header-wrapper">
             <div id="header" class="container">
                 <div id="logo">
-                    <h1><a href="#">SimpleWork</a></h1>
+                    <h1><a href="/">SimpleWork</a></h1>
                 </div>
                 <div id="menu">
-                    <ul>
+
                         <li
                             class="{{ Request::path() === '/' ? 'current_page_item' : '' }}"
                         >
@@ -59,7 +59,7 @@ Released   : 20140225
                         <li
                             class="{{ Request::path() === 'contact' ? 'current_page_item' : '' }}"
                         >
-                            <a href="#" accesskey="5" title="">Contact Us</a>
+                            <a href="/contact" accesskey="5" title="">Contact Us</a>
                         </li>
                     </ul>
                 </div>
