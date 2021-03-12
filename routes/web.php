@@ -48,3 +48,6 @@ Route::get('/articles/create', 'ArticlesController@create');
 Route::get('/articles/{article}', 'ArticlesController@show')->name('articles.show');
 Route::get('/articles/{article}/edit', 'ArticlesController@edit')->name('articles.edit');
 Route::put('/articles/{article}/update', 'ArticlesController@update');
+
+
+Route::get('/payments/create', 'PaymentsController@create')->middleware('auth');
