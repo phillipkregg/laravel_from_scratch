@@ -16,6 +16,8 @@
 //     return new App\Example();
 // });
 
+
+
 Route::get('/posts/{post}', 'PostsController@show');
 
 Route::get('/', function () {
@@ -51,3 +53,8 @@ Route::put('/articles/{article}/update', 'ArticlesController@update');
 
 
 Route::get('/payments/create', 'PaymentsController@create')->middleware('auth');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();

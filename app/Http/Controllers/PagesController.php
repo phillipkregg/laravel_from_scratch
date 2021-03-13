@@ -35,8 +35,8 @@ class PagesController extends Controller
 
         //return File::get(public_path('index.php'));
 
-        return \App\ExampleFacade::handle();
+        //return \App\ExampleFacade::handle();
 
-        //return view('welcome');
+        return view('welcome');
     }
 }
